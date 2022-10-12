@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/styles/pages/donate.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/paw.png">
+    <title>Online ZOO</title>
+</head>
+<body class="container">
+    <div id="shadow1"></div>
+    <header class="header">
+        <div class="container__inner header__container">
+            <h1 class="logo"><a href="../main/index.html">PetStory online</a></h1>
+            <nav class="menu" id="menu">
+                <div class="logo"><a href="../main/index.html">PetStory online</a></div>
+                <div><a href="../main/index.html">About</a></div>
+                <div><a href="#">Map</a></div>
+                <div><a href="#">Zoos</a></div>
+                <div class="menu_active">Donate</div>
+                <div><a href="#">Contact us</a></div>
+                <div class="menu__design"><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">Designed by ©</a></div>
+                <img class="menu_close" id="menu_close_btn" src="../../assets/images/x_icon.svg" alt="close">
+            </nav>
+            <div class="header__burger" id="burger"></div>
+        </div>
+    </header>
+    <main>
+        <section class="watch_small">
+           
+        </section>
+        <section id="pick-feed">
+            <div class="container__inner container-pick-feed">
+                <h3>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
+                <p>
+                    Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.
+                </p>
+                <h4>Donation Information</h4>
+                <div class="donation-container">
+                    <h2>Pick and feed a friend</h2>
+                    <p>We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+                    <div class="panda-diet">
+                        <div class="panda-diet-number">
+                            <span>4</span><br>
+                            Panda diet for the day.
+                        </div>
+                        <div class="panda-diet-x">
+                            <img src="../../assets/images/x_icon.png" alt="x">
+                        </div>
+                        <div class="panda-diet-image"></div>
+                    </div>
+                    Amount
+                    <ul class="donate-control" id="donate_control">
+                        <li class="donate-control-invisible">$5000</li>
+                        <li class="donate-control-invisible">$2000</li>
+                        <li class="donate-control-invisible">$1000</li>
+                        <li>$500</li>
+                        <li>$250</li>
+                        <li class="selected">$100</li>
+                        <li>$50</li>
+                        <li>$25</li>
+                    </ul>
+                    
+                    <div class="controls">
+                        <input type="number" maxlength="4" max="9999" min="0" placeholder="Another amount" id="donate_value" value="100"><br>
+
+                        <input class="custom-radio" name="amount" type="radio" id="monthly" value="monthly">
+                        <label for="monthly">Monthly</label>
+                        <input class="custom-radio" name="amount" type="radio" id="once" value="once" checked>
+                        <label for="once">Once</label>
+                        <br>
+                        <button class="btn btn_round-corner">Feed a friend now</button><br>
+                        <span>Share with your friends on social networks </span>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container__inner footer__container">
+            <div class="logo footer__logo"><a href="../main/index.html">PetStory online</a></div>
+            <div class="mail footer__mail">
+                <h4>Subscribe to our news</h4>
+                <form>
+                    <input class="mail__input" type="email" required placeholder="Enter your email">
+                    <button class="btn_submit" type="submit">Submit</button>
+                </form>
+            </div>
+            <button class="btn footer__donate"  onclick="window.location.href = '../donate/index.html';">donate for volunteers</button>
+            <ul class="footer__social">
+                <li class="footer__social-item"><a class="footer__social-item_facebook" href="https://www.facebook.com/">Facebook</a></li>
+                <li class="footer__social-item"><a class="footer__social-item_twitter" href="https://twitter.com/">Twitter</a></li>
+                <li class="footer__social-item"><a class="footer__social-item_instagram" href="https://www.instagram.com/">Instagram</a></li>
+                <li class="footer__social-item"><a class="footer__social-item_youtube" href="https://www.youtube.com/">YouTube</a></li>
+            </ul>
+            <div class="menu footer__menu">
+                <div class="menu_active">About</div>
+                <div><a href="#">Map</a></div>
+                <div><a href="#">Zoos</a></div>
+                <div><a href="#">Contact us</a></div>
+            </div>
+            <div class="footer__design">
+                Designed by Alisa Samborskaya<br>
+                ©RSSchool & ©Yem Digital 2021
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../../assets/scripts/popup.js"></script>
+<script src="../../assets/scripts/menu.js"></script>
+<script src="../../assets/scripts/amount.js"></script>
+</html>

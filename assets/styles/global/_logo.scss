@@ -1,0 +1,80 @@
+.logo {
+    width: 82px;
+    height: 52px;
+    color: $logo-color;
+    border: 1px solid $logo-color;
+    border-radius: 2px;
+    text-align: center;
+    font: $font-logo;    
+    background: url("../../images/bamboo.svg") no-repeat 8px 22px;
+
+    a{
+        display:block;
+        padding: 3px 0;
+        color: $logo-color;
+    }
+
+    &:hover {
+        filter: $filter;
+    }
+
+    .header &{
+        margin: 14px 0;
+    }
+
+    .menu &{
+        display: none;
+    }
+
+    
+    //tablet, mobile
+    @media screen and (max-width: $tablet-end){
+    // tablet & mobile
+        .header & {
+            border: none;
+            font: $font-logo-small; 
+            margin: 1px 0 4px;
+            width: 47px;
+            height: 29px;
+            background: url("../../images/bamboo-small.svg") no-repeat 3px 15px;
+        }
+        .menu &{
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: $mobile-end){
+        // mobile
+        .footer &{
+            width: auto;
+            height: auto;border: none;
+            background-position: 72px 0px;
+            margin:8px auto;
+        }
+        .menu &{
+            display: block;
+        }
+    }
+
+    .menu &{
+        color:#fff;
+        a{
+            color:#fff;
+            &:hover{
+                color:#fff;
+            }
+        }
+        filter: $filter;
+        width: 65px;
+        height: 41px;
+        border: 1px solid;
+        border-radius: 2px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 120%;  
+        margin-bottom:15px;
+        background: url("../../images/bamboo.svg") no-repeat 8px 18px;
+        padding:0px;
+    }
+
+}

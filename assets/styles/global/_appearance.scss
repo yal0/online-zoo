@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+
+$font-logo: normal 400 19px/120% 'Roboto';
+$font-logo-small: normal 400 12px/120% 'Roboto';
+$font-h2: normal 700 107px/75% 'Roboto';
+$font-h3: normal 400 48px/120% 'Roboto';
+//$font-h4: normal 700 36px/130% 'Roboto';
+$font-h4: normal 400 24px/120% 'Roboto';
+$font: normal 400 16px/140% 'Roboto';
+$font-btn: normal 500 16px/140% 'Roboto';
+//$font-subtitle: normal 400 24px/120% 'Roboto';
+$font-small: normal 300 15px/120% 'Roboto';
+$font-thin: normal 100 16px/190% 'Roboto';
+
+$header-bg: #000;
+$header-color: #fff;
+
+$footer-bg: #000;
+$footer-color: #fff;
+
+$body-bg: #fff;
+$body-color: #333B41;
+
+$logo-color: #fff;
+//$logo-hover-color: #F9804B;
+$filter: invert(39%) sepia(35%) saturate(1298%) hue-rotate(327deg) brightness(99%) contrast(97%);
+
+$link-color: #fff;
+$link-hover-color: #F9804B;
+
+$btn-color: #fff;
+$btn-bg: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+$btn-hover-bg: #E47209;
+$btn-active-bg: #4B9200;
+$btn-disabled-bg: #828282;
+
+$btn-submit-color: #000;
+$btn-submit-border-color: #333B41;
+$btn-submit-active-color: #4B9200;
+$btn-submit-error-color: #D31414;
+$btn-submit-bg: #F1F3F2;
+
+$mail-input-border: #FA6F32;
+$mail-input-color: #BDBDBD;
+
+$decoration-color-1: #F9804B;
+$decoration-color-2: #fff;
+$decoration-color-3: #FFEE2E;
+
+
+
+body{
+    font: $font;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+a{
+    color: $link-color;
+    text-decoration: none;
+    
+    &:hover
+    {
+        color: $link-hover-color;
+    }
+}

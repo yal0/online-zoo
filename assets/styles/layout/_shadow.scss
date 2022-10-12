@@ -1,0 +1,14 @@
+// body::before
+#shadow1, #shadow2 {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: #000;
+    content: "";
+    opacity: 80%;
+    display: none;
+    cursor: pointer;
+}

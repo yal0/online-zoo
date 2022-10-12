@@ -1,0 +1,128 @@
+.backstage{
+    background: url("../../images/flower_foto1.png") no-repeat top 10px right; 
+    /* border: #F9804B 1px solid; */
+   
+    .backstage__container{
+        display: flex;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        h3{
+            font-size: 48px;
+            line-height: 120%;
+            color: #333B41;
+            font-weight: 400;
+            margin:0 0 20px 0;
+        }
+
+        h4{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            color: #333B41;
+            margin: 55px 0 35px 0;
+        }
+    }
+
+    .backstage__img{
+        background: url('../../images/bamboo-cap.png') no-repeat center 0;
+        width: 253%;
+    }
+
+    .backstage__info{
+        margin-left:87px;
+    }
+
+    p.strong {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color: #333B41;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    @media screen and (min-width: $desktop-start) and (max-width: $desktop-end){
+        // desktop
+        background: none;
+        .backstage__container{
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .backstage__img{
+            margin-top: 10px;
+            width: 239%;
+        }
+
+        .backstage__info{
+            margin-left:32px;
+        }
+    }
+
+    @media screen and (min-width: $tablet-start) and (max-width: $tablet-end){
+        // tablet
+        .backstage__img{
+            display: none;
+        }
+
+        .backstage__container{
+            padding-top: 60px;
+            padding-bottom: 43px;
+        }
+
+        .backstage__info{
+            margin-left:5px;
+            
+            padding-right: 20%;
+        }
+        .backstage__container{
+            h4 {
+                margin: 30px 0 20px 0;
+            }
+        }
+
+        background: url("../../images/flower_foto1.png") no-repeat top -5px right -30px; 
+        background-size: 25%;
+        p.strong {
+            text-shadow: none;
+            font-weight: 400;
+        }
+    }
+
+    @media screen and (max-width: $mobile-end){
+        // mobile
+        .backstage__img{
+            display: none;
+        }
+
+        .backstage__container{
+            padding-top: 30px;
+            padding-bottom: 5px;
+        }
+
+        .backstage__info{
+            margin-left:0px;
+            
+            padding-right: 5%;
+            
+        }
+        .backstage__container{
+            h3 {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 120%;
+                margin:0 0 10px 0;
+            }
+            h4 {
+                margin: 15px 0 10px 0;
+            }
+        }
+
+        background: url("../../images/flower_foto1.png") no-repeat top -45px right -20%; 
+        background-size: 25%;
+        p.strong {
+            text-shadow: none;
+            font-weight: 400;
+        }
+
+    }
+}

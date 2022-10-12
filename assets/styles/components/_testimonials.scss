@@ -1,0 +1,252 @@
+.testimonials{
+    background: url("../../images/leav_foto.png") no-repeat bottom -135px right;
+
+
+    .testimonials__container{
+        padding:0 0 180px 0;   
+    }
+
+    h3{
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 130%;
+        /* identical to box height, or 47px */
+        text-align: center;
+        color: #333B41;
+        margin-top:138px;
+        margin-bottom: 48px;
+    }
+
+    .testimonials__grid {
+        display:flex;
+        //flex-direction: row;
+        grid-gap: 30px;
+        justify-content: space-between;
+        margin:0 auto;
+        margin-bottom:20px;
+        
+    }
+
+    .testimonials__card{
+        //max-width: 268px;
+        
+        text-align: left;
+        height: 391px;
+        border: 2px solid transparent; /*Обводка нужной толщины, но прозрачная*/
+        background: linear-gradient(45deg,#FEBDAB,#F3A9F8, #E0D8F0); /*Нужный градиент в качестве фона*/
+        box-shadow: inset 0px 0px 0px 100vw #F1F3F2; /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+        border-radius: 20px; /*Скругляет углы*/
+        overflow: hidden;
+        flex:1 1 0;
+
+        h4{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            /* or 19px */
+            color: #000000;
+            margin-top:14px;
+            margin-bottom: 0px;
+        }
+
+        h5{
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            /* identical to box height, or 18px */
+            color: #BDBDBD;
+            margin: 0;
+        }
+
+        .testimonials__user-image{
+            float: left;
+            margin:13px 13px 0 13px;
+        }
+
+        p{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: #767474;
+            margin: 10px 15px 22px 16px;
+            overflow: hidden;
+        }
+    }
+
+    .testimonials__progress-bar{
+        width: 599px;
+        height: 8px;
+        border: 1px solid transparent; /*Обводка нужной толщины, но прозрачная*/
+        background: linear-gradient(45deg,#FEBDAB,#F3A9F8, #E0D8F0); /*Нужный градиент в качестве фона*/
+        box-shadow: inset 0px 0px 0px 100vw #F5F7F6; /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+        border-radius: 5px; /*Скругляет углы*/
+        margin:0 auto;
+        cursor: pointer;
+        margin-bottom:31px;
+
+        .testimonials__progress-bar-inner{
+            width: 115px;
+            height: 6px;
+            float:left;
+        
+            background: #FE9013;
+            border-radius: 5px;
+        }
+
+        &:hover {
+            .testimonials__progress-bar-inner{
+                background: #E47209;
+            }
+        }   
+    }
+
+    
+
+    @media screen and (min-width: $desktop-start) and (max-width: $desktop-end) {
+        // desktop
+        background-size: 20%;
+        background-position: right 500px;
+
+        .testimonials__invisible {
+            display: none;
+        }
+
+        h3{
+            margin-top:100px;
+            margin-bottom: 30px;
+        }
+
+        .testimonials__progress-bar{
+            width: 390px;
+            margin-bottom:51px;
+            .testimonials__progress-bar-inner{
+                width: 75px;
+            }
+        }
+
+        .testimonials__container{
+            padding:0 0 140px 0;   
+        }
+        
+    }
+
+    @media screen and (min-width: $tablet-start) and (max-width: $tablet-end) {
+        // tablet
+        background-size: 20%;
+        background-position: right 475px;
+
+        .testimonials__invisible {
+            display: none;
+        }
+
+        .testimonials__grid {
+            flex-direction: column;
+            grid-gap: 15px;
+        }
+
+        .testimonials__card{
+            cursor: pointer;
+            flex:1 1 auto;
+            height: 109px;
+
+            p{
+                line-height: 135%;
+            }
+        }
+
+        h3{
+            margin-top:60px;
+            margin-bottom: 30px;
+        }
+
+        .testimonials__progress-bar{
+            display: none;
+        }
+
+        .testimonials__container{
+            .testimonials__btn{
+                margin-top: 20px;
+                width: 240px;
+            }
+            text-align: center;
+            padding-bottom: 80px;
+        }
+    }
+
+    @media screen and (max-width: $mobile-end) {
+        // mobile
+        background-size: 20%;
+        background-position: right 485px;
+
+        .testimonials__invisible {
+            display: none;
+        }
+
+        .testimonials__grid {
+            flex-direction: column;
+            grid-gap: 15px;
+        }
+
+        .testimonials__card{
+            cursor: pointer;
+            flex:1 1 auto;
+            height: 109px;
+
+            p{
+                line-height: 135%;
+            }
+        }
+
+        h3{
+            margin-top:30px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 120%;
+        }
+
+        .testimonials__progress-bar{
+            display: none;
+        }
+
+        .testimonials__container{
+            .testimonials__btn{
+                margin-top: 10px;
+                width: 240px;
+            }
+            text-align: center;
+            padding-bottom: 60px;
+        }
+
+    }
+    
+}
+
+.testimonials__range{
+    text-align: center;
+    input {
+        width: 390px;
+        margin-bottom:51px;
+        cursor: pointer;
+    }
+    // input[type="range"] {
+    //     display: block;
+    //     -webkit-appearance: none;
+    //     background-color: #bdc3c7;
+    //     width: 300px;
+    //     height: 5px;
+    //     border-radius: 5px;
+    //     margin: 0 auto;
+    //     outline: 0;
+    //   }
+    //   input[type="range"]::-webkit-slider-thumb {
+    //     -webkit-appearance: none;
+    //     background-color: #e74c3c;
+    //     width: 30px;
+    //     height: 30px;
+    //     border-radius: 50%;
+    //     border: 2px solid white;
+    //     cursor: pointer;
+    //     transition: .3s ease-in-out;
+    //   }​
+}

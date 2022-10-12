@@ -1,0 +1,141 @@
+.watch_small
+{
+    height: 385px;
+    background: url("../../images/panda-bg.png") no-repeat center top;
+    background-size: 130%; 
+    margin: 0;
+
+    @media screen and (min-width: $desktop-start) and (max-width: $desktop-end){ 
+        background-size: 180%; 
+        height: 390px;
+    }
+
+    @media screen and (min-width: $tablet-start) and (max-width: $tablet-end){
+        // tablet
+        height: 335px;
+        background-size: 220%;
+    }
+
+    @media screen and (max-width: $mobile-end){
+        // tablet
+        height: 187px;
+        background-size: 240%;
+    }
+
+    
+}
+
+.watch
+{
+    height:700px;
+    background: url("../../images/giant-panda.png") no-repeat center -80px;
+    background-size: 130%;
+    overflow: hidden;
+
+    .watch__decoration{
+   
+        padding:73px 0 0 92px;
+        width: 465px;
+        height: 465px;
+        background-color: $decoration-color-1;
+        border-radius: 50%;
+        
+        float: right;
+        margin: 12px 108px 0 0;
+        text-align: center;
+        
+    }
+
+    h2{
+        width:465px;
+        
+        text-transform: uppercase;
+        font:$font-h2;
+        text-align: center;
+        color:$decoration-color-2;
+
+        span {
+            color:$decoration-color-3;
+            display: inline-block;
+            margin-left: -10px;
+        }
+    }
+
+    .btn {
+        margin-top: 60px;
+        margin-left:85px;
+    }
+
+    @media screen and (min-width: $desktop-start) and (max-width: $desktop-end){
+        // desktop
+        height: 504px;
+        background: url("../../images/giant-panda.png") no-repeat center 0px;
+        background-size: 120%;
+        .watch__decoration{
+            padding:52px 0 0 75px; //двигать текст
+            width: 367px;
+            height: 367px;
+            margin-top:-10px; // двигать круг по вертикали
+            margin-right: 147px; // двигать круг по горизонтали
+        }
+        h2{
+            width:367px;
+            font-size: 85px;            
+        }
+        .btn {
+            margin-top: 42px;
+            margin-left:35px;
+        }
+    }
+
+    @media screen and (min-width: $tablet-start) and (max-width: $tablet-end){
+        // tablet
+        height: 339px;
+        background: url("../../images/giant-panda.png") no-repeat center 0px;
+        background-size: 120%;
+        .watch__decoration{
+            padding:40px 0 0 45px; //двигать текст
+            width: 238px;
+            height: 238px;
+            margin-top:10px; // двигать круг по вертикали
+            margin-right: 50px; // двигать круг по горизонтали
+        }
+        h2{
+            width:238px;
+            font-size: 54px;  
+            span {
+                margin-left: -5px;
+            }          
+        }
+        .btn {
+            margin-top: -7px;
+            margin-left:-607px;
+        }
+    }
+
+    @media screen and (max-width: $mobile-end){
+        // mobile
+        height: 261px;
+        background: url("../../images/giant-panda.png") no-repeat center 0px;
+        background-size: 120%;
+        .watch__decoration{
+            padding:19px 0 0 23px; //двигать текст
+            width: 119px;
+            height: 119px;
+            margin-top:22px; // двигать круг по вертикали
+            margin-right: 28px; // двигать круг по горизонтали
+        }
+        h2{
+            width:119px;
+            font-size: 28px;  
+            span {
+                margin-left: -4px;
+            }          
+        }
+        .btn {
+            margin-top: 61px;
+            margin-left: -173px;
+        }
+
+    }
+}

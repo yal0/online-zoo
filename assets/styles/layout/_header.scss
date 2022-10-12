@@ -1,0 +1,40 @@
+.header{
+    background-color: $header-bg;
+    color: $header-color;
+    
+    .header__container {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    @media screen and (max-width: $tablet-end){
+        // tablet & mobile
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+
+        .header__burger{    
+            display: block;
+            margin: 11px 0;
+            width:18px;
+            height: 10px;
+            background: url('../../images/burger_menu.svg') no-repeat right center;
+
+            &:hover {
+                cursor: pointer;
+                filter: $filter;
+            }
+        }   
+        
+    }
+
+    
+}
+
+@media screen and (max-width: $tablet-end){
+    main { 
+        margin-top:34px;
+    }
+}
+

@@ -1,0 +1,564 @@
+#pick-feed{
+    margin: 0;
+    //height: 1482px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.container-pick-feed
+{
+    
+    padding: 44px 0 180px 0;
+}
+
+.container-pick-feed h3{
+    margin: 0;
+    font-weight: 400;
+font-size: 36px;
+line-height: 130%;
+/* identical to box height, or 47px */
+
+
+color: #FFFFFF;
+
+}
+
+.container-pick-feed h4{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    /* identical to box height, or 47px */
+    
+    
+    /* or3 */
+    
+    color: #FE9013;
+    margin:47px 0 60px 0;
+}
+
+.container-pick-feed p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    
+    
+    color: rgba(255, 255, 255, 0.99);
+    margin:5px 0 0 0;
+}
+
+.donation-container{
+    background: rgba(255, 255, 255, 0.52);
+backdrop-filter: blur(2px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 20px;
+
+padding: 40px 92px 62px;
+}
+
+.container-pick-feed h2{
+    font-weight: 400;
+font-size: 48px;
+line-height: 120%;
+/* identical to box height, or 58px */
+
+text-align: center;
+
+/* or3 */
+
+color: #FE9013;
+    margin:0 0 0 -6px;
+}
+
+.donation-container p{
+    font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+
+
+color: #333B41;
+margin-top:20px;
+}
+
+.panda-diet{
+    //overflow: hidden;
+    display: grid;
+    grid-template-columns: 165px 30px 350px;
+    grid-template-rows: 200px;
+    width: fit-content;
+    margin: 105px auto 50px;
+    .panda-diet-number{
+        text-align: center;
+        font-size: 12px;
+        line-height: 140%;
+        span{
+            font-weight: 500;
+            font-size: 72px;
+            line-height: 60%;
+            
+            text-align: center;
+            text-transform: uppercase;
+            
+            color: #000000;
+            display: block;
+            margin:65px 0 0 0;
+        }
+    }
+    .panda-diet-x{
+        //background: url("../../images/x_icon.png") no-repeat center 85px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .panda-diet-image{
+        background: url("../../images/animals-widget.png") no-repeat 53px -45px;
+    }
+}
+
+.progress
+{
+    display:grid;
+    grid-template-columns: repeat(8,118px);
+    font-weight: 500;
+    grid-gap: 10px;
+    margin-left:-24px;
+    position: relative;
+    font-weight: 500;
+font-size: 26px;
+line-height: 140%;
+/* or 36px */
+
+text-transform: uppercase;
+
+color: #333B41;
+text-align: center;
+}
+
+
+
+.controls {
+    text-align: center;
+    margin: 50px 0 0px;
+}
+
+.controls #donate_value{
+    width: 268px;
+height: 54px;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+
+color: #929699;
+border:1px solid #929699;
+padding-left:8px;
+background: transparent url("../images/dollar.svg") no-repeat right +20px center;
+
+}
+
+/* .controls #donate_value:active,
+.controls #donate_value:focus{
+    width: 268px;
+height: 54px;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+
+color: #4B9200;
+border:1px solid #4B9200;
+padding-left:8px;
+background: transparent url("../images/dollar.svg") no-repeat right +20px center;
+} */
+
+.controls input[type=radio]{
+    width: 20px;
+
+
+    background: transparent;
+border:1px solid #FE9013;
+display: inline-block;
+margin:25px 0 35px;
+}
+
+#radio1{
+    margin-left:-25px;
+}
+
+#radio2{
+    margin-left:45px;
+}
+
+.controls .btn{
+    margin-bottom: 32px;
+}
+
+/************************** custom radio button **************************/
+
+  /* для элемента input c type="radio" */
+  .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    margin:22px 30px 32px 16px;
+  }
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #FE9013;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #FE9013;
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #FE9013;
+    border-color: #FE9013;
+  }
+  /* стили для радиокнопки, находящейся в фокусе */
+  /* .custom-radio:focus+label::before {
+    box-shadow: 0 0 0 0.2rem #f9b970;
+    
+  } */
+
+  /* #FED290 */
+
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    border-color: #FE9013;
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border-color: #4B9200;
+    background-color: #4B9200;
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); */
+  }
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+  }
+
+  /**********************************************/
+  .donate-control{
+        //list-style: none;
+        display: flex;
+        flex:1 1 0;
+        background-color: #72828E;
+        height: 27px;
+        border: #404950 12px solid;
+        width: 100%;
+        justify-content: space-between;
+        margin: 14px 0 98px 0;
+
+        li{
+            position: relative;
+            top:-20px;
+            list-style: none;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 140%;
+            height:80px;
+            width: 9%;
+            text-align: center;
+            padding-top: 50px;
+            background: url("../../images/dot.png") center 16px no-repeat;
+
+            
+
+            &:hover{
+                cursor: pointer;
+                color: #FE9013;
+                background: url("../../images/dot.png") center 16px no-repeat,
+                            url("../../images/roller_icon.png") center 1px no-repeat;
+            }
+            
+            &.selected{
+                color: #FE9013;
+                background: url("../../images/dot.png") center 16px no-repeat,
+                            url("../../images/roller_icon.png") center 1px no-repeat;
+            }
+        }
+
+        
+  }
+
+  /*************************************/
+#pick-feed{
+    @media screen and (min-width: $desktop-start) and (max-width: $desktop-end) {
+        // desktop
+        p{
+            margin-top: 28px;
+        }
+
+        .container-pick-feed h4{
+            margin:45px 0 40px 0;
+        }
+
+        .donation-container {
+            padding: 20px 48px 42px;
+
+            p{
+                margin-top: 10px;
+            }
+        }
+
+        .container-pick-feed{
+            padding-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: $tablet-start) and (max-width: $tablet-end) {
+        // tablet
+        h3 {
+            font-size: 24px;
+            line-height: 120%;
+        }
+
+        .container-pick-feed
+        {
+            
+            padding: 30px 20px 45px;
+        }
+
+        p{
+            margin-top: 20px;
+            
+        }
+
+        .donation-container p {
+            text-align: center;
+        }
+
+        .container-pick-feed h4{
+            margin:29px 0 30px 0;
+        }
+
+        .donation-container {
+            padding: 28px 38px 28px;
+
+            
+        }
+
+        
+
+        .donate-control{
+               
+            li
+            {
+                font-size: 26px;
+                line-height: 140%;
+            }
+        }
+
+        .controls #donate_value{
+            width: 180px;
+            height: 42px;
+        }
+
+        .custom-radio + label {
+            margin: 30px 30px 32px 16px;
+        }
+
+        .controls {
+            margin: 70px 0 0px;
+        }
+
+        .panda-diet{
+            display: grid;
+            grid-template-columns: 30% 6% 64%;
+            grid-template-rows: 200px;
+            width: 100%;
+            margin: 95px auto 35px;
+            .panda-diet-number{
+                margin-right:25px;
+            }
+            .panda-diet-x{
+                background: url("../../images/x_icon.png") no-repeat -5px 85px;
+            }
+        
+            .panda-diet-image{
+                background: url("../../images/animals-widget.png") no-repeat 43px -45px;
+            }
+        }
+        
+        
+    }
+
+    @media screen and (max-width: $mobile-end) {
+        // mobile
+        
+        h3 {
+            font-size: 24px;
+            line-height: 120%;
+        }
+
+        .container-pick-feed h4{
+            font-size: 24px;
+            line-height: 120%;
+            margin:25px 0 30px 0;
+        }
+
+        .container-pick-feed h2{
+            font-size: 24px;
+            line-height: 120%;
+            margin:0 0 0 -6px;
+        }
+
+        .container-pick-feed
+        {
+            
+            padding: 32px 10px 19px;
+            p{
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+
+        p{
+            margin-top: 15px;
+            
+        }
+
+        .donation-container {
+            padding: 20px 2px 18px;
+
+            p{
+                font-size: 16px;
+                line-height: 140%;
+                margin-top:10px;
+                text-align: center;
+            }
+        }
+
+        .donate-control{
+               
+            li
+            {
+                font-size: 26px;
+                line-height: 140%;
+            }
+        }
+
+        .controls #donate_value{
+            width: 180px;
+            height: 42px;
+        }
+
+        .custom-radio + label {
+            margin: 30px 30px 32px 16px;
+        }
+
+        .controls {
+            margin: 70px 0 0px;
+        }
+
+        .panda-diet{
+            //transform: scale(0.7);
+            justify-self: center;
+            //transform: scale(0.7);
+            // display: grid;
+            //grid-template-columns: 165px 30px 350px;
+            //grid-template-columns: 30% 6% 64%;
+            grid-template-columns: 91px 20px 180px;
+            // grid-template-rows: 200px;
+            width: fit-content;
+            margin: -15px auto -28px auto;
+            align-self: center;
+            // .panda-diet-number{
+            //     margin-right:25px;
+            // }
+            // .panda-diet-x{
+            //     background: url("../../images/x_icon.png") no-repeat -5px 85px;
+            //     background-size: 70%;
+            // }
+            .panda-diet-number{
+                font-size: 8.5px;
+                line-height: 140%;
+                padding-top:10px;
+                margin-right:6px;
+                span{
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 80%;
+                    margin:77px 0 0 0;
+                }
+            }
+
+            .panda-diet-x{
+                img{
+                    width: 8px;
+                    height: 8px;
+                    margin: 15px 0 0 -10px;
+                }
+            }
+        
+            .panda-diet-image{
+                background: url("../../images/animals-widget.png") no-repeat 24px 28px;
+                background-size: 90%;
+            }
+        }
+
+        .donate-control{
+            //list-style: none;
+            
+            border: #404950 6px solid;
+            height: 14px;
+            margin: 8px 0 48px 0;
+    
+            li{
+                position: relative;
+                top:-20px;
+                list-style: none;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 140%;
+                height:50px;
+                width: 9%;
+                text-align: center;
+                padding-top: 32px;
+                background: url("../../images/dot.png") center 16px no-repeat;
+                background-size: 20%;
+    
+                &:hover{
+                    cursor: pointer;
+                    background: url("../../images/dot.png") center 16px/20% no-repeat,
+                                url("../../images/roller_icon.png") center 6px/70% no-repeat;
+                                
+                }
+            }
+        }
+
+        .controls {
+            margin: 0px 0 0px;
+            span {
+                font-size: 15.5px;
+            }
+        }
+
+        .custom-radio + label {
+            margin: 25px 30px 27px 16px;
+        }
+
+        .donate-control-invisible{
+            display: none;
+        }
+
+    }
+}

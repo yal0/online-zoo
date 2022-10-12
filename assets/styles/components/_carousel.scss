@@ -1,0 +1,54 @@
+.testimonials__carousel{
+    overflow: hidden;
+}
+
+.testimonials__grid {
+
+    position:relative;
+    left:0px;
+    transition: 3s;
+}
+
+@media screen and (min-width: $wide-start) {
+    // wide
+    .testimonials__card{
+        min-width: 267px;
+    }
+}
+
+@media screen and (min-width: $desktop-start) and (max-width: $desktop-end) {
+    // desktop
+    .testimonials__card{
+        min-width: 293px;
+    }
+}
+
+input[type="range"] {
+    display: block;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    outline: 0;
+    width: 599px;
+    height: 8px;
+    border: 1px solid transparent; /*Обводка нужной толщины, но прозрачная*/
+    background: linear-gradient(45deg,#FEBDAB,#F3A9F8, #E0D8F0); /*Нужный градиент в качестве фона*/
+    box-shadow: inset 0px 0px 0px 100vw #F5F7F6; /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+    border-radius: 5px; /*Скругляет углы*/
+    margin:0 auto;
+    cursor: pointer;
+    margin-bottom:31px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    width:15px;
+    height: 15px;
+    background: #FE9013;
+  }​
+    
+    input[type="range"]::-webkit-slider-thumb:active {
+      transform: scale(1.6);
+    }
+

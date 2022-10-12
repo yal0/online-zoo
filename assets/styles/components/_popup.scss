@@ -1,0 +1,68 @@
+.popup__close{
+    display: none;
+    border: 2px solid transparent; /*Обводка нужной толщины, но прозрачная*/
+    background: linear-gradient(45deg,#FEBDAB,#F3A9F8, #E0D8F0); /*Нужный градиент в качестве фона*/
+    border-radius: 50%;
+    cursor:pointer;
+    background: url('../../images/x_icon.png') no-repeat center center #fff;
+    width: 25px;
+    height: 25px;
+    position:fixed;
+    top: calc(50% - 195px - 20px);
+    left: calc(50% + 134px);
+    z-index: 10;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 6;
+    width: 268px;
+    height: 391px;
+    top: calc(50% - 195px);
+    left: calc(50% - 134px);
+    text-align: left;
+    border: 2px solid transparent; /*Обводка нужной толщины, но прозрачная*/
+    background: linear-gradient(45deg,#FEBDAB,#F3A9F8, #E0D8F0); /*Нужный градиент в качестве фона*/
+    box-shadow: inset 0px 0px 0px 100vw #F1F3F2; /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+    border-radius: 20px; /*Скругляет углы*/
+    overflow: hidden;
+    flex:1 1 0;
+
+    
+
+    h4{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        /* or 19px */
+        color: #000000;
+        margin-top:14px;
+        margin-bottom: 0px;
+    }
+
+    h5{
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 120%;
+        /* identical to box height, or 18px */
+        color: #BDBDBD;
+        margin: 0;
+    }
+
+    .popup__user-image{
+        float: left;
+        margin:13px 13px 0 13px;
+    }
+
+    p{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 120%;
+        color: #767474;
+        margin: 10px 15px 22px 16px;
+        overflow: hidden;
+    }
+    
+}

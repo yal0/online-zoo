@@ -1,0 +1,75 @@
+$min-width: 320px;
+//320 - контрольные точки
+$mobile-end: 620px;
+$tablet-start:621px;
+// 640 - контрольные точки
+$tablet-end: 900px;
+$desktop-start: 901px;
+// 1000 - контрольные точки
+$desktop-end: 1280px;
+$wide-start: 1281px;
+//1600 - контрольные точки
+$max-width: 1600px;
+
+// $mobile-end: 320px;
+// $tablet-start:321px;
+// $tablet-end: 640px;
+// $desktop-start: 641px;
+// $desktop-end: 1000px;
+// $wide-start: 1001px;
+// $max-width: 1600px;
+
+// $wide: screen and (min-width: $wide-start);
+// $desktop: screen and (min-width: $desktop-start) and (max-width: $desktop-end);
+// $tablet: screen and (min-width: $tablet-start) and (max-width: $tablet-end);
+// $mobile: screen and (max-width: $mobile-end);
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    min-height: 100vh;
+        
+    header { flex: 0 0 auto; }
+    main { flex: 1 0 auto; }
+    footer { flex: 0 0 auto; }
+
+    .container__inner{
+        margin: 0 auto;
+        
+        @media screen and (min-width: $wide-start) {
+            // wide
+            max-width:  $max-width;    
+            padding-left:220px;
+            padding-right:220px;
+        }
+
+        @media screen and (min-width: $desktop-start) and (max-width: $desktop-end) {
+            // desktop
+            padding-left:30px;
+            padding-right:30px;
+        }
+
+        @media screen and (min-width: $tablet-start) and (max-width: $tablet-end) {
+            // tablet
+            padding-left:20px;
+            padding-right:20px;
+            
+        }
+
+        @media screen and (max-width: $mobile-end) {
+            // mobile
+            padding-left:10px;
+            padding-right:10px;
+            //min-width: $min-width;
+
+        }
+    }
+}
+
+
+
+
+
+
